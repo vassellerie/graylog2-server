@@ -75,7 +75,7 @@ const TableList = React.createClass({
   _headerItem() {
     let bulkHeaderActions;
 
-    if (this.state.selected.count() > 1) {
+    if (this.state.selected.count() > 0) {
       bulkHeaderActions = this.props.headerActionsFactory(this.state.selected);
     }
 
